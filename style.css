@@ -455,8 +455,9 @@ form.example::after {
    border-radius: 12px;
    background: #fff;
    margin-right: 15px !important;
-   padding: 15px;
+   padding:  0px 15px 15px 15px;
    width: 210px !important;
+   cursor: pointer;
 
    /* Center slide text vertically */
    display: -webkit-box;
@@ -557,7 +558,7 @@ form.example::after {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 15px 15px;
+   padding: 15px 17px;
    background: #007AFF;
    border-radius: 8px;
    margin-left: 8px;
@@ -646,12 +647,6 @@ form.example::after {
    background-color: #FFD12D;
 }
 
-.piano {
-
-}
-.piano-2 {
-
-}
 .subtext{ 
    font-size: 16px;
    line-height: 24px;
@@ -665,4 +660,30 @@ form.example::after {
 
 .my__card {
    display: flex;
+}
+
+.card__phone {
+   background-color: #007AFF;
+   background: url('/image/card/3/5.svg');
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   padding-left: 45px;
+}
+.phone__title {
+   font-size: 32px;
+   color: #fff;
+   font-weight: 700;
+   line-height: 1;
+   margin-bottom: 15px;
+}
+.phone__text {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1;
+   color: #fff;
+}
+
+.phone__btn {
+   
 }
