@@ -31,6 +31,12 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
 
@@ -79,7 +85,7 @@
               <input type="text" placeholder="Искать товары.." name="search" />
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <div class="nav col-3">
+            <div class="navs col-3">
               <div class="nav__link">
                 <div class="nav__item">
                   <i class="fa-solid fa-heart"></i>
@@ -521,21 +527,309 @@
           <div class="swiper-button-prev my__prev"></div>
         </div>
       </div>
-    </section><!-- slider №2 -->
-
+    </section>
+    <!-- slider №2 -->
 
     <section class="container">
       <div class="section">
-        <div class="section__title">
-          Акции и предложения
-        </div>
+        <div class="section__title">Акции и предложения</div>
         <a class="section__show">
           Смотреть все <i class="fa-solid fa-arrow-right-long"></i>
         </a>
       </div>
     </section>
+    <!-- section title -->
 
-<!-- 
+    <!-- tabs -->
+
+    <section class="section__tabs">
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="my__tabs active">
+            <a data-toggle="tab" href="#home">Все</a>
+          </li>
+          <li><a data-toggle="tab" href="#home">Подарок за покупку</a></li>
+          <li><a data-toggle="tab" href="#home">Промокоды</a></li>
+          <li><a data-toggle="tab" href="#home">Скидки</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="row">
+              <div class="col-4 p-4">
+                <div class="visa">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <a href="#" class="visa__btn"> MIDEABYSHOP </a>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-4">
+                <div class="visa yellow">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <a href="#" class="visa__btn"> MIDEABYSHOP </a>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-4">
+                <div class="visa">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <p class="subtext">до 20 декабря</p>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-4">
+                <div class="visa" style="background: #e0298c">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <p class="subtext">до 1 января</p>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-4">
+                <div class="visa" style="background: #e1d8fd">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <a href="#" class="visa__btn"> MIDEABYSHOP </a>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 p-4">
+                <div class="visa" style="background: #262520">
+                  <div class="visa__content">
+                    <div class="visa__title">10% скидка</div>
+                    <div class="visa__text">на холодильники Samsung</div>
+                    <p class="subtext">до 24 декабря</p>
+                  </div>
+                  <div class="visa__img">
+                    <img class="visa__foto" src="./image/card/2/1.svg" alt="" />
+                    <img
+                      class="visa__photo"
+                      src="./image/card/2/1-1.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>
+              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section">
+        <div class="section__title">Электроника</div>
+        <a class="section__show">
+          Смотреть все <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </section>
+    <!-- section title -->
+
+    <section>
+      <div class="container">
+        <div class="my__card">
+          <div class="my__slider">
+            <div class="card">
+              <div class="card__img">
+                <img src="./image/card/1/2.svg" alt="" />
+                <div class="card__frame">-6%</div>
+              </div>
+              <div class="card__reviews">
+                <i class="fa-solid fa-star"></i>
+                4.6 86 отзывов
+              </div>
+              <div class="card__subtitle">3 071 880 сум</div>
+              <div class="card__title">2 898 000 сум</div>
+              <div class="card__text">
+                Чехол Apple Leather Sleeve for MacBook Pro 13 black
+              </div>
+    
+              <div class="card__in">
+                <div class="card__input">
+                  Рассрочка
+                  <div class=""><span>150 000</span><strong> х 6 мес</strong></div>
+                </div>
+    
+                <div class="card__input__btn">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="my__slider">
+            <div class="card">
+              <div class="card__img">
+                <img src="./image/card/1/2.svg" alt="" />
+                <div class="card__frame">-6%</div>
+              </div>
+              <div class="card__reviews">
+                <i class="fa-solid fa-star"></i>
+                4.6 86 отзывов
+              </div>
+              <div class="card__subtitle">3 071 880 сум</div>
+              <div class="card__title">2 898 000 сум</div>
+              <div class="card__text">
+                Чехол Apple Leather Sleeve for MacBook Pro 13 black
+              </div>
+    
+              <div class="card__in">
+                <div class="card__input">
+                  Рассрочка
+                  <div class=""><span>150 000</span><strong> х 6 мес</strong></div>
+                </div>
+    
+                <div class="card__input__btn">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="my__slider">
+            <div class="card">
+              <div class="card__img">
+                <img src="./image/card/1/2.svg" alt="" />
+                <div class="card__frame">-6%</div>
+              </div>
+              <div class="card__reviews">
+                <i class="fa-solid fa-star"></i>
+                4.6 86 отзывов
+              </div>
+              <div class="card__subtitle">3 071 880 сум</div>
+              <div class="card__title">2 898 000 сум</div>
+              <div class="card__text">
+                Чехол Apple Leather Sleeve for MacBook Pro 13 black
+              </div>
+    
+              <div class="card__in">
+                <div class="card__input">
+                  Рассрочка
+                  <div class=""><span>150 000</span><strong> х 6 мес</strong></div>
+                </div>
+    
+                <div class="card__input__btn">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="my__slider">
+            <div class="card">
+              <div class="card__img">
+                <img src="./image/card/1/2.svg" alt="" />
+                <div class="card__frame">-6%</div>
+              </div>
+              <div class="card__reviews">
+                <i class="fa-solid fa-star"></i>
+                4.6 86 отзывов
+              </div>
+              <div class="card__subtitle">3 071 880 сум</div>
+              <div class="card__title">2 898 000 сум</div>
+              <div class="card__text">
+                Чехол Apple Leather Sleeve for MacBook Pro 13 black
+              </div>
+    
+              <div class="card__in">
+                <div class="card__input">
+                  Рассрочка
+                  <div class=""><span>150 000</span><strong> х 6 мес</strong></div>
+                </div>
+    
+                <div class="card__input__btn">
+                  <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section">
+        <div class="section__title">Успей купить!</div>
+        <a class="section__show">
+          Смотреть все <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </section>
+    <!-- section title -->
+
+    <!--     
     <section class="section__card">
       <div class="container">
         <div class="row">
@@ -572,9 +866,6 @@
         </div>
       </div>
     </section> -->
-
-
-
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script
