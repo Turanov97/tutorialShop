@@ -455,7 +455,7 @@ form.example::after {
    border-radius: 12px;
    background: #fff;
    margin-right: 15px !important;
-   padding:  0px 15px 15px 15px;
+   padding: 0px 15px 15px 15px;
    width: 210px !important;
    cursor: pointer;
 
@@ -474,7 +474,9 @@ form.example::after {
    align-items: center;
    transition: .2s ease-in;
 }
-
+.my__slider--m {
+   margin-right: 0 !important;
+}
 
 /* card          
            =========== */
@@ -501,6 +503,31 @@ form.example::after {
    font-size: 15px;
    font-weight: 400;
    color: #fff;
+}
+
+.card__frame--green {
+   background-color: #14C044;
+   padding: 6px 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card__frame--hits {
+   border-radius: 17px;
+   font-size: 15px;
+   font-weight: 400;
+   color: #fff;
+   position: absolute;
+   top: 22px;
+   left: 10px; 
+   padding: 8px 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: rgb(50, 95, 255);
+   background: linear-gradient(38deg, rgba(50, 95, 255, 1) 0%, rgba(211, 86, 255, 1) 100%);
 }
 
 .card__reviews {
@@ -596,15 +623,18 @@ form.example::after {
    border-radius: 12px;
    display: flex;
 }
-.visa__content{
+
+.visa__content {
    padding: 27px 30px;
 }
+
 .visa__title {
    color: #fff;
    font-size: 31px;
    font-weight: 700;
    line-height: 1.1;
 }
+
 .visa__text {
    color: #Fff;
    font-size: 16px;
@@ -612,9 +642,10 @@ form.example::after {
    line-height: 1.2;
    margin-top: 7px;
 }
+
 .visa__btn {
    display: inline-block;
-   padding: 10px 12px;  
+   padding: 10px 12px;
    font-weight: 600;
    color: #282F3C;
    font-size: 15px;
@@ -624,9 +655,11 @@ form.example::after {
    margin-top: 80px;
    text-align: center;
 }
+
 .visa__img {
    position: relative;
 }
+
 .visa__foto {
    width: 150px;
    height: 149px;
@@ -635,6 +668,7 @@ form.example::after {
    bottom: -4px;
    left: -11px;
 }
+
 .visa__photo {
    position: absolute;
    z-index: 1;
@@ -643,11 +677,12 @@ form.example::after {
    bottom: 20px;
    left: -15px;
 }
+
 .yellow {
    background-color: #FFD12D;
 }
 
-.subtext{ 
+.subtext {
    font-size: 16px;
    line-height: 24px;
    font-weight: 400px;
@@ -663,27 +698,93 @@ form.example::after {
 }
 
 .card__phone {
+   width: 100%;
    background-color: #007AFF;
-   background: url('/image/card/3/5.svg');
+   background: url('/image/card/4/shoptools.svg');
    border-radius: 12px;
    display: flex;
-   align-items: center;
+   padding-top: 45px;
    padding-left: 45px;
 }
+.card__phone--m {
+   justify-content: flex-end;
+   margin-right: 15px;
+}
+.card__phone--girl {
+   background: url('/image/card/3/5.svg');
+}
+
+.phone__content {
+   display: flex;
+   flex-direction: column;
+}
+.phone__content-m {
+
+}
+
 .phone__title {
    font-size: 32px;
    color: #fff;
    font-weight: 700;
-   line-height: 1;
+   line-height: 38.73px;
    margin-bottom: 15px;
 }
+
 .phone__text {
    font-size: 16px;
    font-weight: 500;
-   line-height: 1;
+   line-height: 22px;
    color: #fff;
 }
 
 .phone__btn {
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+   color: #fff;
+   background-color: #FFC700;
+   padding: 14px 30px;
+   border-radius: 8px;
+   margin-top: 94px;
+}
+.phone__btn-m {
+   background: none;
+   padding: 0;
+   justify-content: start;
+   margin-top: 26px;
+   color: #782C3C;
+}
+.phone__btn i { 
+   margin-left: 5px;
+}
+
+/* works */
+
+.works {
+   display: flex;
+}
+
+.works__col {
+   flex: 1 1 16.666%;
+   height: auto;
+}
+
+.works__itam:first-child {
+   margin: 0;
+}
+
+.works__item {
+   background: #E8E8E8;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+.works__title {
+   padding: 24px;
+}
+
+.works__image {
+   position: relative;
 }
