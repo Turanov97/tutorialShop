@@ -208,8 +208,9 @@
               </div>
               <div class="watch__card__img">
                 <img src="./image/image.svg" alt="" />
-                <div>
+                <div class="watch__link">
                   <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-gift watch__gift"></i>
                 </div>
               </div>
               <div class="watch__card__subtitle">
@@ -1153,38 +1154,79 @@
     <section class="section__works">
       <div class="container">
         <div class="works">
-          <div class="works__col">
+          <div class="works__col p-2 col-3">
             <div class="works__item">
               <div class="works__info">
                 <div class="works__title">Смартфоны и гаджеты</div>
               </div>
-              <div class="works__image">
-                <img  src="./image/card/4/1.svg" alt="" />
-              </div>
+                <img class="works__img" src="./image/card/4/1.svg" alt="" />
             </div>
           </div>
-          <div class="works__col">
-            <div class="works__item">
+          <div class="works__col p-2 col-3">
+            <div class="works__item works__row">
               <div class="works__title">Ноутбуки</div>
+              <img class="works__img" src="./image/work/4.png" alt="">
             </div>
-            <div class="works__item">
-              <div class="works__title">creatively designed</div>
-            </div>
-          </div>
-          <div class="works__col">
-            <div class="works__item">
-              <div class="works__title">creatively designed</div>
+            <div class="works__item  works__row">
+              <div class="works__subtitle">Бытовая техника</div>
+              <img class="works__img" src="./image/work/5.png" alt="">
             </div>
           </div>
-          <div class="works__col d-flex flex-row">
-            <div class="works__item">
-              <div class="works__title">creatively designed</div>
+          <div class="works__col p-2 col-3">
+            <div class="works__item work__gamer">
+              <div class="works__title work__gamer">Все для 
+                <p>геймеров</p> </div>
+              <img class="works__img" src="./image/work/3.png" alt="">
             </div>
-            <div class="works__item">
-              <div class="works__title">creatively designed</div>
+          </div>
+          <div class="works__col p-2 col-3 d-flex flex-row">
+            <div class="works__item works__h-m col-6">
+              <div class="works__subtitle works__home__title ">Товары<p>для дома и</p>  сада</div>
+              <img class="works__img works__home" src="./image/work/2.png" alt="">
+            </div>
+            <div class="works__item col-6">
+              <div class="works__subtitle">Строительство, интрументы</div>
+              <img class="works__img" src="./image/work/1.png" alt="">
             </div>
           </div>
         </div>
+        <!-- <div class="works">
+          <div class="works__col p-2 col-3 d-flex flex-row">
+            <div class="works__item works__h-m col-6">
+              <div class="works__subtitle works__home__title ">Товары<p>для дома и</p>  сада</div>
+              <img class="works__img works__home" src="./image/work/2.png" alt="">
+            </div>
+            <div class="works__item col-6">
+              <div class="works__subtitle">Строительство, интрументы</div>
+              <img class="works__img" src="./image/work/1.png" alt="">
+            </div>
+          </div>
+          <div class="works__col p-2 col-3">
+            <div class="works__item work__gamer">
+              <div class="works__title work__gamer">Все для 
+                <p>геймеров</p> </div>
+              <img class="works__img" src="./image/work/3.png" alt="">
+            </div>
+          </div>
+          <div class="works__col p-2 col-3">
+            <div class="works__item works__row">
+              <div class="works__title">Ноутбуки</div>
+              <img class="works__img" src="./image/work/4.png" alt="">
+            </div>
+            <div class="works__item  works__row">
+              <div class="works__subtitle">Бытовая техника</div>
+              <img class="works__img" src="./image/work/5.png" alt="">
+            </div>
+          </div>
+          <div class="works__col p-2 col-3">
+            <div class="works__item">
+              <div class="works__info">
+                <div class="works__title">Смартфоны и гаджеты</div>
+              </div>
+                <img class="works__img" src="./image/card/4/1.svg" alt="" />
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -1987,15 +2029,13 @@
                 </div>
               </div>
 
-              <div class="installment__photos">
                 <div class="installment__imgs"> 
-                  <img class="installment__img-1" src="./image/2/Eureka!.svg" alt="">
-                  <img class="installment__img-2" src="./image/2/Group.svg" alt="">
-                  <img class="installment__img-3" src="./image/2/1.png" alt="">
-                  <img class="installment__img-4" src="./image/2/2.png" alt="">
-                  <img class="installment__img" src="./image/2/3.png" alt="">
+                  <img class="installment__img installment__guy" src="./image/2/Eureka!.svg" alt="">
+                  <img class="installment__img installment__group" src="./image/2/Group.svg" alt="">
+                  <img class="installment__img installment__shop" src="./image/2/1.png" alt="">
+                  <img class="installment__img installment__gift" src="./image/2/2.png" alt="">
+                  <img class="installment__img installment__game" src="./image/2/3.png" alt="">
                 </div>
-              </div>
 
             </div>
           </div>
@@ -2025,13 +2065,12 @@
              
             </div>
           </div>
-          <div class="swiper-button-next my__next"></div>
-          <div class="swiper-button-prev my__prev"></div>
+        
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="container">
             <div class="byshop row">
               <div class="byshop__item col-3">
@@ -2188,6 +2227,296 @@
               </div>
             </div>
         </div>
+    </section> -->
+    
+    <section class="container">
+      <div class="swiper mySwiper swiper__my">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/Rectangle.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Магазин электроники
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/clothes.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Одежда и обувь
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/kitchen.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Кухонные товары
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/sport.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Спортивный магазин
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/sport.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Спортивный магазин
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/sport.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Спортивный магазин
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="byshop__item">
+              <div iv class="byshop__header">
+                <div class="byshop__img">
+                  <img src="./image/card/byshop/1.png" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                  <img class="by__photo" src="./image/card/byshop/sport.png" alt="">
+                </div>
+              </div>
+              <div class="byshop__content">
+                <div class="byshop__title">
+                  Спортивный магазин
+                </div>
+                <div class="byshop__text">
+                  Электроника
+                </div>
+                <div class="byshop__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5/5</p>
+                </div>
+
+                <div class="byshop__watch">
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/watch.png" alt="">
+                  </div>
+                  <div class="byshop__watch__item">
+                    <img src="./image/card/byshop/1-1.png" alt="">
+                    <img src="./image/card/byshop/1-2.png" alt="">
+                    <img src="./image/card/byshop/1-3.png" alt="">
+                    <img src="./image/card/byshop/1-4.png" alt="">
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next my__next"></div>
+        <div class="swiper-button-prev my__prev"></div>
+      </div>
     </section>
 
     <section class='section__car'>

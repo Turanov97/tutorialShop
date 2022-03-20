@@ -48,3 +48,14 @@ var swiper = new Swiper(".mySwiper1", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".swiper__my", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+ 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
