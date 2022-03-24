@@ -53,9 +53,22 @@ var swiper = new Swiper(".swiper__my", {
   slidesPerView: 4,
   spaceBetween: 30,
   freeMode: true,
- 
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+$(function () {
+  /* menu nav bar */
+  $("#nav__box").on("click", function () {
+    $(this).toggleClass("active");
+    $("#nav__toggle").toggleClass("active");
+    $("#nav__inner").toggleClass("active");
+  });
+  $('.header__select').on('click', function() {
+    $('.header__box').toggleClass('active')
+  })
 });
