@@ -78,30 +78,119 @@ p {
 }
 
 .header__box {
-   height: 492px;
-   background: rgba(0, 0, 0, .8);
+   background: #Fff;
    position: absolute;
    z-index: 7;
    transition: .2s linear;
+   display: none;
 }
+
+.header__box.active {
+   width: 592px;
+   height: auto;
+   top: 123px;
+   left: 18%;
+   box-shadow: 0 0 30px 0 #cecece;
+   background: #fff;
+   border-radius: 12px;
+   display: block;
+}
+
 .header__box.active::before {
    content: "";
    position: absolute;
-   border: 20px solid transparent; border-bottom: 20px solid #fff;
+   border: 20px solid transparent;
+   border-bottom: 20px solid #fff;
    top: -40px;
    left: 48px;
    width: 22px;
    height: 22px;
 }
-.header__box.active {
-   width: 500px;
-   top: 60px;
-   display: block;
-   box-shadow: 0 0 30px 0 #cecece;
-   background: #fff;
-   border-radius: 12px;
+
+.box__box {
+   display: flex;
 }
 
+.box__counter {
+   display: flex;
+   justify-content: space-between;
+   padding: 24px 34px;
+}
+
+.box__counter i {
+   font-style: normal;
+   font-size: 20px;
+   line-height: 24px;
+   display: flex;
+   align-items: flex-end;
+   color: #9499A5;
+}
+
+.box__Search {
+   display: flex;
+   padding-bottom: 14px;
+   border-bottom: 1px solid #F2F2F2;
+}
+
+.box__Search input {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   align-items: center;
+   border: none;
+   outline: none;
+   color: #282F3C;
+}
+
+.box__Search i {
+   margin-right: 14px;
+   color: #007AFF;
+   font-size: 20px;
+}
+
+.box__content {
+   padding: 12px 34px;
+}
+
+.box__item {
+   padding: 9.5px 0;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   align-items: center;
+   color: #282F3C;
+}
+.box__item:hover {
+   color: #5858DF;
+}
+.box__item img {
+   margin-right: 14px;
+}
+
+.box__inner {
+   padding: 12px 34px ;
+}
+#xmark {
+   cursor: pointer;
+}
+.counter__title {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   display: flex;
+   align-items: flex-end;
+   color: #282F3C;
+}
+.select__option {
+   display: flex;
+   align-items: center;
+}
+.select__option i {
+   margin-left: 10px;
+}
 
 /* container */
 .container {
@@ -194,7 +283,7 @@ form.example input[type=text] {
 form.example .select {
    float: left;
    width: 12%;
-   padding: 13.8px;
+   padding: 13.4px;
    background: #F2F2F2;
    font-size: 13px;
    border: 1px solid grey;
@@ -399,7 +488,7 @@ form.example::after {
    height: 100%;
    position: absolute;
    z-index: 5;
-   background:#Fff ;
+   background: #Fff;
    left: 0;
    overflow: auto;
    transition: .2s linear;
@@ -505,11 +594,13 @@ form.example::after {
 .menu__content {
    margin-bottom: 34px
 }
+
 .menu__logo {
    display: flex;
    width: 100%;
    flex-wrap: wrap;
 }
+
 .menu__logo img {
    width: 130px;
    margin: 5px;

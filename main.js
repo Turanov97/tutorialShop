@@ -25,9 +25,9 @@ setInterval(function () {
 }, 1000);
 
 var swiper = new Swiper(".mySwiper1", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
   navigation: {
@@ -60,7 +60,6 @@ var swiper = new Swiper(".swiper__my", {
   },
 });
 
-
 $(function () {
   /* menu nav bar */
   $("#nav__box").on("click", function () {
@@ -68,7 +67,10 @@ $(function () {
     $("#nav__toggle").toggleClass("active");
     $("#nav__inner").toggleClass("active");
   });
-  $('.header__select').on('click', function() {
-    $('.header__box').toggleClass('active')
+  $("#select").on("click", function () {
+    $("#header__box").toggleClass("active");
+  });
+  $('#xmark').on('click', function () {
+    $("#header__box").toggleClass("active");
   })
 });
